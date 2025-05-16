@@ -73,37 +73,36 @@ export default function Home() {
                         </Link>
                     </div>
                 </div>
-                <div className='w-full bg-white dark:bg-gunmetal'>
-                    <div className='flex flex-col lg:flex-row items-center justify-center py-24 px-12 lg:px-28 lg:space-x-20'>
-                        <div className='flex flex-col w-full'>
-                            <h1 className='mb-12 text-4xl sm:text-5xl text-center text-royal-blue dark:text-blue-darknut font-bold'>
-                                Desenvolvido por Especialistas
+                <div className="w-full bg-white dark:bg-gunmetal">
+                    <div className="flex flex-col lg:flex-row items-center justify-center py-24 px-12 lg:px-28 lg:space-x-20">
+                        <div className="flex flex-col w-full">
+                            <h1 className="mb-12 text-4xl sm:text-5xl text-center text-royal-blue dark:text-blue-darknut font-bold">
+                                Desenvolvido por Empresários Especialistas
                             </h1>
-                            <div className='text-justify py-8'>
-                                <p className='text-gray-700 dark:text-gray-300 '>
-                                    O <strong>Módulo de Questionário</strong> foi cuidadosamente elaborado por professores pesquisadores da
-                                    <strong> Universidade Estadual de Maringá (UEM)</strong>. Com base em estudos acadêmicos e práticas de mercado,
-                                    nosso questionário oferece uma análise precisa e confiável para ajudar sua empresa a alcançar o próximo nível.
+                            <div className="text-justify py-8">
+                                <p className="text-gray-700 dark:text-gray-300">
+                                    O <strong>Módulo de Questionário</strong> foi cuidadosamente elaborado por empresários especialistas ligados à
+                                    <strong> ACIM – Associação Comercial e Empresarial de Maringá</strong>. Com base em vivências reais do mercado e conhecimento prático acumulado ao longo de décadas, o conteúdo oferece uma análise estratégica e confiável para impulsionar sua empresa.
                                 </p>
-                                <p className='mt-4 text-gray-700 dark:text-gray-300'>
-                                    A UEM é reconhecida por sua excelência em pesquisa e inovação, garantindo que você tenha acesso a uma ferramenta
-                                    desenvolvida com o mais alto padrão de qualidade.
+                                <p className="mt-4 text-gray-700 dark:text-gray-300">
+                                    A ACIM é reconhecida como um dos pilares do empreendedorismo em Maringá, reunindo mais de 5.000 empresas em prol do desenvolvimento regional. A expertise dos seus associados garante que você tenha acesso a uma ferramenta feita por quem vive o dia a dia dos negócios.
                                 </p>
                             </div>
                         </div>
-                        <div className='relative flex flex-col w-full aspect-[16/9] z-0'>
+                        <div className="relative flex flex-col w-full aspect-[16/9] z-0">
                             <Image
-                                src='/home/uem.jpg'
-                                alt='Foto do prédio da reitoria da UEM'
+                                src="/home/acim.webp"
+                                alt="Foto do prédio da ACIM"
                                 fill={true}
                                 style={{
-                                    objectFit: 'cover',
-                                    objectPosition: '50% 40%',
+                                    objectFit: "cover",
+                                    objectPosition: "50% 40%",
                                 }}
                             />
                         </div>
                     </div>
                 </div>
+
                 <div className='p-12 flex flex-col justify-center items-center bg-bleached-silk dark:bg-midnight-blue'>
                     <h1 className='mb-12 sm:text-5xl text-royal-blue dark:text-blue-darknut font-bold'>O que Avaliamos</h1>
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto justify-items-center place-items-center py-12 gap-8'>

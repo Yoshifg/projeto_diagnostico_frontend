@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <div className='flex flex-col w-full space-y-8 md:space-y-12 pb-12'>
-            <div className="relative flex flex-col w-full h-64 sm:h-72 md:h-96 lg:h-[560px] z-0">
+            <div className="relative flex flex-col w-full h-72 sm:h-80 md:h-104 lg:h-[560px] z-0">
                 <Image
-                    src="/about-us/hub-foto.jpg"
-                    alt="Hub de Inovação"
+                    src="/about-us/acim-evento.jpeg"
+                    alt="Acim"
                     fill={true}
                     style={{
                         objectFit: "cover",
@@ -24,14 +24,13 @@ export default function About() {
                     Quem Somos
                 </h1>
                 <p className='text-center max-w-4xl'>
-                    O Hub de Inovação Fronteira promove o desenvolvimento tecnológico conectando academia e empresas. Atuamos com startups, deep techs e soluções inovadoras em parceria com a Universidade Estadual de Maringá (UEM) e outros ambientes de inovação.
-                </p>
+                    A ACIM é a Casa do Empreendedor em Maringá. Com mais de 70 anos de atuação, hoje contamos com mais de 5.000 empresas unidas pelo propósito do associativismo.                </p>
             </div>
             <div className='flex flex-col md:flex-row w-full items-center p-4 md:p-8 md:space-x-8'>
                 <div className='relative flex flex-col w-full aspect-[16/9] p-8 z-0'>
                     <Image
-                        src='/about-us/prof-farid-falando.jpg'
-                        alt='Professor Farid falando em evento'
+                        src='/about-us/estande-acim.jpeg'
+                        alt='Estande da ACIM'
                         fill={true}
                         style={{
                             objectFit: 'cover',
@@ -44,15 +43,20 @@ export default function About() {
                         Nossa Missão
                     </span>
                     <p>
-                        Impulsionar o desenvolvimento tecnológico e transferir conhecimento da academia para o mercado, apoiando startups e deep techs por meio de parcerias estratégicas e inovação.
+
+
+                        Somos ambiciosos quando se trata de trabalhar para impulsionar o empreendedorismo em Maringá e trabalhamos seguindo a visão de “estar entre as melhores associações empresariais do país na geração de valor aos seus associados e comunidade, articuladora de negócios sustentáveis, com visão de futuro e representação legítima junto a sociedade.”
+                    </p>
+                    <p>
+                        Fazemos isso seguindo os valores de “participar da comunidade empresarial, representando-a e defendendo-a de forma transparente e confiável, tendo como princípios de conduta: integridade, competência e profissionalismo”.
                     </p>
                 </div>
             </div>
             <div className='flex flex-col md:flex-row w-full items-center p-4 md:p-8 md:space-x-8'>
                 <div className='md:hidden relative flex flex-col w-full aspect-[16/9] p-8 z-0'>
                     <Image
-                        src='/about-us/palestra-hub.jpeg'
-                        alt='Professor Farid falando em evento'
+                        src='/about-us/acim-grupo.jpg'
+                        alt='Grupo de pessoas na ACIM'
                         fill={true}
                         style={{
                             objectFit: 'cover',
@@ -65,13 +69,17 @@ export default function About() {
                         Nossa História
                     </h1>
                     <p>
-                        Nascemos para conectar a Universidade Estadual de Maringá (UEM) ao mercado, criando um ecossistema de inovação. Com grupos como o NEST e o Rinaldi Research Group, promovemos colaboração e soluções tecnológicas avançadas.
+                        No ano de 1953, quando Maringá tinha apenas 6 anos desde sua fundação, surgiu a ACIM, como um pequeno grupo de empresários. Tendo o empresário Américo Marques Dias como primeiro presidente, a associação foi formada para atuar como uma entidade que daria voz, de maneira organizada, para as insatisfações da classe empresarial de Maringá.
+                    </p>
+                    <p>
+                        Mais de 7 décadas depois, hoje a ACIM se estabeleceu como uma das instituições mais importantes para o desenvolvimento do nosso município. Não mais chamada de “Associação Comercial e Industrial de Maringá”, como era no início, e sim “Associação Comercial e Empresarial de Maringá”, a ACIM hoje conta com mais de 5.000 empresas filiadas, desde MEIs até grandes corporações.  Todos os dias, atuamos para fortalecer o empreendedorismo em nossa região e fazer de Maringá uma cidade melhor para todos que vivem nela.
                     </p>
                 </div>
+
                 <div className='hidden md:relative md:flex md:flex-col md:w-full md:aspect-[16/9] md:p-8 md:z-0'>
                     <Image
-                        src='/about-us/palestra-hub.jpeg'
-                        alt='Professor Farid falando em evento'
+                        src='/about-us/acim-grupo.jpg'
+                        alt='Grupo de pessoas na ACIM'
                         fill={true}
                         style={{
                             objectFit: 'cover',
