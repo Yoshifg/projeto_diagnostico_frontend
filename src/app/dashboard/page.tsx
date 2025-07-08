@@ -48,7 +48,7 @@ export default function Dashboard(){
   return (
     <div className='flex flex-col w-full space-y-8 md:space-y-12 p-12'>
       
-      <div className='p-4 m-10 text-center'>
+      <div className='p-4 mb-5 text-center'>
         {/* <h1 className="text-4xl font-bold text-royal-blue border-b-2 border-royal-blue pb-2">
           Gráfico de Evolução
         </h1>

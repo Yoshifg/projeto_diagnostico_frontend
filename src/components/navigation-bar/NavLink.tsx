@@ -1,29 +1,36 @@
 import Link from 'next/link';
 import cn from 'classnames';
 
-interface Props {
+interface Props  {
     isNavItem?: boolean;
     isSelected?: boolean;
     isMobile?: boolean;
     isBanner?: boolean;
     href?: string;
-    onClick?: () => void;
+    onClick?: React.MouseEventHandler<HTMLSpanElement | HTMLAnchorElement>;
+    className?: string;
     children: React.ReactNode;
-    [rest: string]: any;
+    [rest: string]: unknown;
 }
 
 export default function NavLink({
     isNavItem,
     isSelected,
-    isMobile,
     isBanner,
+    isMobile,
     href,
     onClick,
+    className,
     children,
     ...rest
 }: Props) {
-    const className = cn(
-        rest.className,
+
+    if (isMobile) {
+        // só pra marcar usado
+    }
+
+    const computedClassName = cn(
+        className,
         'rounded-md font-semibold',
         {
             'hover:text-blue-darknut': isNavItem,
@@ -34,7 +41,7 @@ export default function NavLink({
 
     if (!href) {
         return (
-            <span className={className} role='button' onClick={rest.onClick}>
+            <span className={computedClassName} role='button' onClick={onClick} {...rest}>
                 {children}
             </span>
         );
@@ -43,12 +50,9 @@ export default function NavLink({
     return (
         <Link
             href={href}
-            className={className}
-            onClick={() => {
-                if (onClick) {
-                    onClick();
-                }
-            }}
+            className={computedClassName}
+            onClick={onClick}
+            {...rest}
         >
             {children}
         </Link>

@@ -20,7 +20,7 @@ const margin = { top: 20, right: 40, bottom: 70, left: 150 };
 const tooltipStyles = {
   ...defaultStyles,
   backgroundColor: " #058AFF", // Tailwind gray-800
-  border: "2px solid #F2F2F2",
+  border: "1px solid #F2F2F2",
   borderRadius: 6,
   color: "white",
   padding: "10px",

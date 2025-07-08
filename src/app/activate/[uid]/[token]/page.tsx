@@ -26,7 +26,8 @@ export default function Page() {
             .finally(() => {
                 router.push('/authentication/login');
             });
-    }, []);
+    }, [activation, params, router]);
+    
 
     return (
         <>

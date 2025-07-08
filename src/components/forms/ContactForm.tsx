@@ -8,7 +8,7 @@ export default function ContactForm() {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading] = useState(false);
 
     const onChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { id, value } = event.target;

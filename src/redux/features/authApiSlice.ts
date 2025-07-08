@@ -6,10 +6,10 @@ interface User {
     cnpj: string;
 }
 
-interface CreateUserResponse {
-    success: boolean;
-    user: User;
-}
+// interface CreateUserResponse {
+//     success: boolean;
+//     user: User;
+// }
 
 const authApiSlice = apiSlice.injectEndpoints({
     endpoints: builder => ({

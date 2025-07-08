@@ -16,7 +16,7 @@ const margin = { top: 30, right: 60, bottom: 120, left: 40 };
 const tooltipStyles = {
   ...defaultStyles,
   backgroundColor: "#058AFF",
-  border: "6px solid #F2F2F2",
+  border: "2px solid #F2F2F2",
   borderRadius: 6,
   color: "white",
   padding: "10px",
